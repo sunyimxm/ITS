@@ -1,0 +1,18 @@
+box: frolvlad/alpine-oraclejdk8:slim
+build:
+    steps:
+    - script:
+        name: print hello world
+        code: echo 'Hello World! sun'
+
+build-ITS-image:
+    - internal/docker-build:
+        dockerfile: Dockerfile 
+        image-name: sun_sping_boot
+    - internal/docker-push: 
+        image: sun_sping_boot
+        username: yi.s.sun@oracle.com 
+        password: -!2wZv-i_(R[TPFb[4t2
+        registry: https://phx.ocir.io
+        repository: oardc/sunyi/sun_sping_boot
+        tag: latest
