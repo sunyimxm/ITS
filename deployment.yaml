@@ -1,0 +1,25 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: sun-spring-boot
+  labels:
+    run: sunyi-spring-boot
+spec:
+  replicas: 1 
+  selector:
+    matchLabels:
+     run: sunyi-spring-boot
+  template:
+   metadata:
+      labels:
+        run: sunyi-spring-boot
+   spec:
+     hostNetwork: true
+     containers:
+     - name: sun-spring-boot
+       image: phx.ocir.io/oardc/sunyi/sun_spring_boot:latest
+       imagePullPolicy: Always
+       ports:
+       - name: spring-boot
+         containerPort: 8080
+         protocol: TCP
