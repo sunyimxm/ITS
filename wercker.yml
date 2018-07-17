@@ -5,7 +5,6 @@ build:
         name: print hello world
         code: echo 'Hello World! sun'
 
-build-ITS-image:
     - internal/docker-build:
         dockerfile: Dockerfile 
         image-name: sun_sping_boot
