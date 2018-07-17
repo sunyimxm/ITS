@@ -10,7 +10,7 @@ build:
         image-name: sun_sping_boot
     - internal/docker-push: 
         image: sun_sping_boot
-        username: yi.s.sun@oracle.com 
+        username: oardc/yi.s.sun@oracle.com 
         password: -!2wZv-i_(R[TPFb[4t2
         registry: https://phx.ocir.io
         repository: oardc/sunyi/sun_sping_boot
