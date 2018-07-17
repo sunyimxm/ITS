@@ -7,11 +7,11 @@ build:
 
     - internal/docker-build:
         dockerfile: Dockerfile 
-        image-name: sun_sping_boot
+        image-name: sun_spring_boot
     - internal/docker-push: 
-        image: sun_sping_boot
+        image: sun_spring_boot
         username: oardc/yi.s.sun@oracle.com 
         password: -!2wZv-i_(R[TPFb[4t2
         registry: https://phx.ocir.io
-        repository: oardc/sunyi/sun_sping_boot
+        repository: oardc/sunyi/sun_spring_boot
         tag: latest
