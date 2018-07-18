@@ -1,4 +1,4 @@
-box: oraclelinux
+box: google/golang
 build:
     steps:
     - script:
