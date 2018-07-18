@@ -7,7 +7,7 @@ build:
 
     - internal/docker-build:
         dockerfile: Dockerfile 
-        image-name: sun_spring_boot
+        tag: sun_spring_boot
     - internal/docker-push: 
         image: sun_spring_boot
         username: oardc/yi.s.sun@oracle.com 
