@@ -1,10 +1,9 @@
-box: frolvlad/alpine-oraclejdk8:slim
+box: google/golang
 build:
     steps:
     - script:
         name: print hello world
-        code: echo 'Hello World! sun'
-
+        code: go test ./...
     - internal/docker-build:
         dockerfile: Dockerfile 
         image-name: sun_spring_boot
