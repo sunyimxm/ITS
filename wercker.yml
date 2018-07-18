@@ -3,7 +3,7 @@ build:
     steps:
     - script:
         name: print hello world
-        code: go test ./...
+        code: echo 'hi sun'
     - internal/docker-build:
         dockerfile: Dockerfile 
         image-name: sun_spring_boot
