@@ -1,4 +1,4 @@
-box: google/golang
+box: frolvlad/alpine-oraclejdk8:slim
 build:
     steps:
     - script:
