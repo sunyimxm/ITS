@@ -26,7 +26,7 @@ delele-deployment-service
         server: $OKE_MASTER
         token: $OKE_TOKEN
         insecure-skip-tls-verify: true
-        command: delete deployment  sun-spring-boot  , delete service  sun-spring-boot
+        command: delete deployment  sun-spring-boot  ; delete service  sun-spring-boot
 deploy-to-kubernetes:
     steps:
     # https://github.com/wercker/step-bash-template
