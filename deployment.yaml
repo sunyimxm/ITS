@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: sun-spring-boot
   labels:
-    run: sunyi_spring_boot
+    run: sunyi-spring-boot
 spec:
   replicas: 1 
   selector:
     matchLabels:
-     run: sunyi_spring_boot
+     run: sunyi-spring-boot
   template:
    metadata:
       labels:
-        run: sunyi_spring_boot
+        run: sunyi-spring-boot
    spec:
      hostNetwork: true
      containers:
