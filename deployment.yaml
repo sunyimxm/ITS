@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: sun_spring_boot
+  name: sun-spring-boot
   labels:
     run: sunyi_spring_boot
 spec:
@@ -20,6 +20,6 @@ spec:
        image: phx.ocir.io/oardc/sunyi/sun_spring_boot:latest
        imagePullPolicy: Always
        ports:
-       - name: sun_spring_boot
+       - name: sun-spring-boot
          containerPort: 8080
          protocol: TCP
