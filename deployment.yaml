@@ -16,7 +16,7 @@ spec:
    spec:
      hostNetwork: true
      containers:
-     - name: sun_spring_boot
+     - name: sun-spring-boot
        image: phx.ocir.io/oardc/sunyi/sun_spring_boot:latest
        imagePullPolicy: Always
        ports:
