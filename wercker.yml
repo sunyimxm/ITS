@@ -14,7 +14,7 @@ build:
         registry: https://phx.ocir.io
         repository: oardc/sunyi/sun_spring_boot
         tag: latest
-delele-service
+delele-service:
     steps:
     # https://github.com/wercker/step-bash-template
     # This Wercker step will look for files in our repo with a .template extension.
@@ -27,7 +27,7 @@ delele-service
         token: $OKE_TOKEN
         insecure-skip-tls-verify: true
         command: delete service  sun-spring-boot
-delele-deployment
+delele-deployment:
     steps:
     # https://github.com/wercker/step-bash-template
     # This Wercker step will look for files in our repo with a .template extension.
