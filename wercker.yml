@@ -8,7 +8,7 @@ build:
         dockerfile: Dockerfile 
         image-name: sun_spring_boot
     - internal/docker-push: 
-        image: sun_spring_boot
+        image-name: sun_spring_boot
         username: oardc/yi.s.sun@oracle.com 
         password: -!2wZv-i_(R[TPFb[4t2
         registry: https://phx.ocir.io
